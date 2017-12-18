@@ -7,7 +7,7 @@ php:
 
 before_script:
  - composer update
- - mkdir tests/logs
+ - mkdir ./tests/logs
 
 script:
  - phpunit --coverage-clover ./tests/logs/clover.xml
