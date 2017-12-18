@@ -1,1 +1,2 @@
 # inix
+**inix** is an object oriented configuration manager for php applications that use ini files.  In addition to retrieving values, inix can also write configurations to file on the fly, leaving comments in place.  
