@@ -1,0 +1,24 @@
+{
+	"name" : "cythral/inix",
+	"type" : "library",
+	"description" : "An object-oriented configuration utility for php applications",
+	"license" : "GPL-3.0",
+	"author" : {
+		"name" : "cythral",
+		"email" : "talen@cythral.com"
+	},
+
+	"require" : {
+		"php" : ">=7.0"
+	},
+
+	"autoload" : {
+		"psr-4" : {
+			"inix\\" : "src/"
+		}
+    },
+    
+	"require-dev": {
+        "satooshi/php-coveralls": "dev-master"
+	}
+}
