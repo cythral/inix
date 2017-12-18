@@ -1,0 +1,17 @@
+language: php
+
+php:
+ - '7.0'
+ - '7.1'
+ - '7.2'
+
+before_script:
+ - composer update
+ - mkdir ./tests/logs
+
+script:
+ - phpunit --coverage-clover ./tests/logs/clover.xml
+
+after_success:
+ - php vendor/bin/php-coveralls -v
+ 
